@@ -3,26 +3,23 @@
 <head>
     <title>Protected Link</title>
     <script>
-        function checkCredentials() {
-            var username = document.getElementById("username").value;
+        function checkPassword() {
             var password = document.getElementById("password").value;
-            var correctUsername = "money";
             var correctPassword = "computer";
             
-            if (username === correctUsername && password === correctPassword) {
+            if (password === correctPassword) {
                 window.location.href = "https://t.me/+xE5EmTA05PY2MTFh";
             } else {
-                alert("Incorrect username or password. Try again.");
+                alert("Incorrect password. Try again.");
             }
         }
     </script>
 </head>
 <body>
-    <h2>Enter Credentials to Access the Link</h2>
-    <label for="username">Username:</label>
-    <input type="text" id="username"><br><br>
+    <h2>Enter Password to Access the Link</h2>
     <label for="password">Password:</label>
     <input type="password" id="password"><br><br>
-    <button onclick="checkCredentials()">Submit</button>
+    <button onclick="checkPassword()">Submit</button>
 </body>
 </html>
+
