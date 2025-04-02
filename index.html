@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Protected Link</title>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            var correctPassword = "yourpassword"; // Set your password here
+
+            if (password === correctPassword) {
+                window.location.href = "https://t.me/yourtelegramlink"; // Set your Telegram link here
+            } else {
+                alert("Incorrect password. Try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Enter Password to Access the Link</h2>
+    <input type="password" id="password">
+    <button onclick="checkPassword()">Submit</button>
+</body>
+</html>
